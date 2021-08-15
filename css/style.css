@@ -52,7 +52,7 @@ section {
 }
 
 .portfolio {
-	background-color: black;
+	background-color: transparent;
 }
 
 .portfolio .thumbnail {
@@ -63,7 +63,9 @@ section {
 
 .portfolio .thumbnail.muncul {
 	opacity: 1;
+	background-color: black;
 	transform: translate(0,0);
+	border-color: transparent;
 }
 
 
@@ -87,6 +89,7 @@ footer p {
 	border-radius: 15px;
 	color: black;
 	min-width: 100px;
+	height: 100%;
 	text-align: center;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -98,7 +101,7 @@ footer p {
 	color: black;
 	text-align: center;
 	margin-left: 10px;
-	margin-left: 10px;
+	margin-right: 10px;
 	padding: 10px;
 }
 .kontak ::before {
@@ -126,4 +129,14 @@ footer p {
 	max-width: 80%;
 	text-align: center;
 	justify-content: center;
+}
+
+.thumbnail button {
+	background: linear-gradient(140deg, rgba(185,144,10,1) 0%, rgba(255,240,0,1) 50%, rgba(185,144,10,1) 100%);
+	border-radius: 15px;
+	color: black;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
 }
