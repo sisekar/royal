@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html {
+	position: relative;
+}
+
+body {
+	background-color: black;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	
+}
+
+.jumbotron {
+	min-height: 300px;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+	position: relative;
+	background-color: black;
+}
+
+.jumbotron img {
+	text-align: start;
+	justify-self: start;
+	width: 300px;
+}
+
+
+hr {
+	width: 250px;
+	border-top: 3px solid #999;
+}
+
+section {
+	min-height: 600px;
+}
+
+.kiri, .kanan {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 1.2s;
+}
+
+.kanan {
+	transform: translate(50px, 0);
+}
+
+.kiri-go, .kanan-go {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.portfolio {
+	background-color: black;
+}
+
+.portfolio .thumbnail {
+	opacity: 0;
+	transform: translate(0,-40px);
+	transition: .3s;
+}
+
+.portfolio .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+
+footer {
+	position: absolute;
+	color: white;
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+	background-color: transparent;
+	padding-top: 30px;
+}
+
+footer p {
+	color: white;
+	font-size: 0.9em;
+}
+
+.tbl-nav {
+	background: linear-gradient(140deg, rgba(185,144,10,1) 0%, rgba(255,240,0,1) 50%, rgba(185,144,10,1) 100%);
+	border-radius: 15px;
+	color: black;
+	min-width: 100px;
+	text-align: center;
+	margin-left: 10px;
+	margin-left: 10px;
+}
+
+.kontak {
+	background: linear-gradient(140deg, rgba(185,144,10,1) 0%, rgba(255,240,0,1) 50%, rgba(185,144,10,1) 100%);
+	border-radius: 15px;
+	color: black;
+	text-align: center;
+	margin-left: 10px;
+	margin-left: 10px;
+	padding: 10px;
+}
+.kontak ::before {
+	background-image: url("../img/Logo2.png");
+	background-repeat: no-repeat;
+	z-index: 100;
+}
+
+.sosmed img {
+	width: 100px;
+	height: auto;
+	text-align: center;
+	justify-content: center;
+}
+
+.road-map img {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	justify-content: center;
+}
+
+.road-map .head  {
+	margin: auto;
+	max-width: 80%;
+	text-align: center;
+	justify-content: center;
+}
